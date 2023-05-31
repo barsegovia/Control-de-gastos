@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
     <script src="main.js"></script>
-</head>
-<body>
+  </head>
+  <body>
+    <h1>Control de gastos mensuales</h1>
+    <label>Presupuesto mensual:</label>
+    <input type="number" id="presupuestoInput" />
+    <button onclick="borrarPresupuesto()">Borrar Presupuesto</button>
+    <button onclick="iniciarControlGastos()">Iniciar</button>
     
-</body>
+    <h2>Registrar gasto</h2>
+    <label>Monto del gasto:</label>
+    <input type="number" id="gastoInput" />
+    <button onclick="agregarGasto()">Agregar</button>
+    <h2>Lista de gastos</h2>
+    <ul id="listaGastos"></ul>
+    <p id="totalGastos"></p>
+    <p id="mensajeExcesoPresupuesto"></p>
+  </body>
 </html>

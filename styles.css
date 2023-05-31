@@ -1,0 +1,8 @@
+h1 {
+    color: blue;
+  }
+  
+  .mensaje-error {
+    color: red;
+    font-weight: bold;
+  }
